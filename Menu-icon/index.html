@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu-icon</title>
+    <!-- css for menu icon -->
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      div {
+        width: 3rem;
+        height: 0.5rem;
+        border-radius: 1rem;
+        background-color: black;
+        margin: 0.2rem 0;
+        cursor: pointer;
+      }
+      input[type="checkbox"] {
+        position: absolute;
+        display: none;
+      }
+      .bar1,
+      .bar2,
+      .bar3 {
+        transition: transform 1s ease;
+      }
+      input[type="checkbox"]:checked + label .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      input[type="checkbox"]:checked + label .bar2 {
+        transition: opacity 0.5s ease;
+        opacity: 0;
+      }
+      input[type="checkbox"]:checked + label .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <input id="check" type="checkbox" title="menu-icon" />
+    <label for="check">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </label>
+  </body>
+</html>
