@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    max-width: 600px;
+    /* width: 100%; */
+    margin:5rem auto;
+    border: 1px solid gray;
+    text-align: center;
+    
+}
+
+.tabs{
+    overflow: hidden;
+    background-color: #ccc;
+    padding: .5rem;
+
+}
+
+.tabs button{
+    padding:.8rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 1em;
+}
+
+.active{
+    background-color: #93df89;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.tabcontent{
+    text-align: left;
+    padding: 1rem;
+    display: none;
+}
+
