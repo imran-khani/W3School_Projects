@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fixed Sidebar</title>
-</head>
-<body>
-    
-</body>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .left-col {
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        width: 150px;
+        z-index: 1;
+        background-color: black;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 1rem 0;
+        font-family: sans-serif;
+      }
+      .right-col {
+        margin-left: 150px;
+        padding: 1rem 0.5rem;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 500px) {
+        .left-col {
+          height: auto;
+          flex-direction: row;
+          position: relative;
+          margin: 0;
+          width: 100%;
+          transition: position 1s ease;
+        }
+        .left-col a {
+          margin-left: 10px;
+        }
+        .right-col {
+          margin-left: 0;
+          margin-top: ;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-col">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+    <main class="right-col">
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sequi
+        molestiae repellendus iure modi placeat neque quidem enim quia quod
+        incidunt, quis nulla! Doloremque at temporibus eum expedita fuga
+        consequatur. Mollitia, similique. Iure incidunt dolore sapiente, vitae
+        eligendi deserunt eveniet est officiis quae beatae odit dicta quaerat.
+        Pariatur dolore nobis deserunt commodi molestiae in quo quod harum
+        provident aut fuga, maxime magnam quaerat. Eveniet illo, dignissimos,
+        nemo rem porro nostrum, deleniti ab voluptatum voluptas corrupti
+        blanditiis. Provident deserunt temporibus dolorem totam quo odit aperiam
+        nesciunt error? Distinctio, eveniet eos. Voluptatum odio eum provident
+        deleniti nobis a doloribus architecto, delectus tenetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sequi
+        molestiae repellendus iure modi placeat neque quidem enim quia quod
+        incidunt, quis nulla! Doloremque at temporibus eum expedita fuga
+        consequatur. Mollitia, similique. Iure incidunt dolore sapiente, vitae
+        eligendi deserunt eveniet est officiis quae beatae odit dicta quaerat.
+        Pariatur dolore nobis deserunt commodi molestiae in quo quod harum
+        provident aut fuga, maxime magnam quaerat. Eveniet illo, dignissimos,
+        nemo rem porro nostrum, deleniti ab voluptatum voluptas corrupti
+        blanditiis. Provident deserunt temporibus dolorem totam quo odit aperiam
+        nesciunt error? Distinctio, eveniet eos. Voluptatum odio eum provident
+        deleniti nobis a doloribus architecto, delectus tenetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sequi
+        molestiae repellendus iure modi placeat neque quidem enim quia quod
+        incidunt, quis nulla! Doloremque at temporibus eum expedita fuga
+        consequatur. Mollitia, similique. Iure incidunt dolore sapiente, vitae
+        eligendi deserunt eveniet est officiis quae beatae odit dicta quaerat.
+        Pariatur dolore nobis deserunt commodi molestiae in quo quod harum
+        provident aut fuga, maxime magnam quaerat. Eveniet illo, dignissimos,
+        nemo rem porro nostrum, deleniti ab voluptatum voluptas corrupti
+        blanditiis. Provident deserunt temporibus dolorem totam quo odit aperiam
+        nesciunt error? Distinctio, eveniet eos. Voluptatum odio eum provident
+        deleniti nobis a doloribus architecto, delectus tenetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sequi
+        molestiae repellendus iure modi placeat neque quidem enim quia quod
+        incidunt, quis nulla! Doloremque at temporibus eum expedita fuga
+        consequatur. Mollitia, similique. Iure incidunt dolore sapiente, vitae
+        eligendi deserunt eveniet est officiis quae beatae odit dicta quaerat.
+        Pariatur dolore nobis deserunt commodi molestiae in quo quod harum
+        provident aut fuga, maxime magnam quaerat. Eveniet illo, dignissimos,
+        nemo rem porro nostrum, deleniti ab voluptatum voluptas corrupti
+        blanditiis. Provident deserunt temporibus dolorem totam quo odit aperiam
+        nesciunt error? Distinctio, eveniet eos. Voluptatum odio eum provident
+        deleniti nobis a doloribus architecto, delectus tenetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sequi
+        molestiae repellendus iure modi placeat neque quidem enim quia quod
+        incidunt, quis nulla! Doloremque at temporibus eum expedita fuga
+        consequatur. Mollitia, similique. Iure incidunt dolore sapiente, vitae
+        eligendi deserunt eveniet est officiis quae beatae odit dicta quaerat.
+        Pariatur dolore nobis deserunt commodi molestiae in quo quod harum
+        provident aut fuga, maxime magnam quaerat. Eveniet illo, dignissimos,
+        nemo rem porro nostrum, deleniti ab voluptatum voluptas corrupti
+        blanditiis. Provident deserunt temporibus dolorem totam quo odit aperiam
+        nesciunt error? Distinctio, eveniet eos. Voluptatum odio eum provident
+        deleniti nobis a doloribus architecto, delectus tenetur?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, sequi
+        molestiae repellendus iure modi placeat neque quidem enim quia quod
+        incidunt, quis nulla! Doloremque at temporibus eum expedita fuga
+        consequatur. Mollitia, similique. Iure incidunt dolore sapiente, vitae
+        eligendi deserunt eveniet est officiis quae beatae odit dicta quaerat.
+        Pariatur dolore nobis deserunt commodi molestiae in quo quod harum
+        provident aut fuga, maxime magnam quaerat. Eveniet illo, dignissimos,
+        nemo rem porro nostrum, deleniti ab voluptatum voluptas corrupti
+        blanditiis. Provident deserunt temporibus dolorem totam quo odit aperiam
+        nesciunt error? Distinctio, eveniet eos. Voluptatum odio eum provident
+        deleniti nobis a doloribus architecto, delectus tenetur?
+      </p>
+    </main>
+  </body>
 </html>
