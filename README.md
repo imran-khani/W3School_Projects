@@ -3,3 +3,4 @@
 ### 02. Menu Icon
 ### 03. Accordion
 ### 04. Search menu
+### 05. Fixed Sidebar
