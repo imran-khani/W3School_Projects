@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  padding: 1rem;
+}
+
+.sideNav {
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  /* padding: 1rem; */
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 60px;
+  transition: width 0.5s ease-in-out;
+}
+
+span {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+span:hover {
+  color: tomato;
+}
+
+.sideNav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  margin: auto;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+li:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+i .svg {
+  width: 30px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+i .svg:hover {
+  color: tomato;
+}

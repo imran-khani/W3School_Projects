@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Side Navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <i
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </i>
+    <h1>Animated Side Nav</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam dolore
+      pariatur ex doloribus, officiis error ipsam odio eum magni necessitatibus,
+      quam officia voluptas aut rerum sapiente iure, quo consequatur eveniet?
+    </p>
+
+    <div class="sideNav">
+      <span>x</span>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Pricing</li>
+      </ul>
+    </div>
+
+    <script>
+      let closeBtn = document.querySelector("span");
+      let sideNav = document.querySelector(".sideNav");
+      closeBtn.addEventListener("click", () => {
+        sideNav.style.width = 0;
+      });
+      let openBtn = document.querySelector('i')
+      openBtn.addEventListener('click',()=>{
+        sideNav.style.width = "230px";
+      })
+    </script>
+  </body>
+</html>
