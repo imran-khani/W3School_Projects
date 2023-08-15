@@ -46,11 +46,13 @@
       let sideNav = document.querySelector(".sideNav");
       closeBtn.addEventListener("click", () => {
         sideNav.style.width = 0;
+        document.body.style.background = "transparent";
       });
-      let openBtn = document.querySelector('i')
-      openBtn.addEventListener('click',()=>{
+      let openBtn = document.querySelector("i");
+      openBtn.addEventListener("click", () => {
         sideNav.style.width = "230px";
-      })
+        document.body.style.background = "rgba(0,0,0,0.6)";
+      });
     </script>
   </body>
 </html>
