@@ -5,4 +5,6 @@
 ### 04. Search menu
 ### 05. Fixed Sidebar
 ### 06. Tabs
-### 06. Animated Side Navigation
+### 07. Animated Side Navigation
+### 08. Hoverable Sidenav Buttons
+

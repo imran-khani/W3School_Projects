@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+      /* css stying */
+      .sideNav a {
+        position: absolute;
+        padding: 15px;
+        width: 100px;
+        border-radius: 10px;
+        text-decoration: none;
+        left: -80px;
+        transition: 0.4s ease;
+      }
+      .sideNav a:hover {
+        left: 0;
+      }
+
+      #home {
+        background: tomato;
+        top: 20px;
+        color: white;
+      }
+      #about {
+        background: pink;
+        top: 80px;
+        color: black;
+      }
+      #contact {
+        background: yellow;
+        top: 140px;
+      }
+      #pricing {
+        background: skyblue;
+        top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sideNav">
+      <a href="#" id="home">Home</a>
+      <a href="#" id="about">About</a>
+      <a href="#" id="contact">Contact</a>
+      <a href="#" id="pricing">Pricing</a>
+    </div>
+
+    <script></script>
+  </body>
+</html>
