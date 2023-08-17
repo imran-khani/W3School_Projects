@@ -31,7 +31,7 @@
     }
 
     .active {
-      background-color: 'purple';
+      background-color: green;
     }
   </style>
   <body>
@@ -49,8 +49,8 @@
 
       list.forEach((item) => {
         item.addEventListener("click", () => {
-          list.forEach((item) => {
-            item.classList.remove("active");
+          list.forEach((item2) => {
+            item2.classList.remove("active");
           });
           item.classList.add("active");
         });
