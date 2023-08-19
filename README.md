@@ -8,4 +8,5 @@
 ### 07. Animated Side Navigation
 ### 08. Hoverable Sidenav Buttons
 ### 09. Hide Menu on Scroll
+### 10. Hoverable Dropdown
 
