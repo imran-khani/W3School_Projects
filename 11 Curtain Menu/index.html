@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curtain Menu</title>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        background-color: #0e0b0b;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 1;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        margin-top: 70px;
+      }
+      nav ul li {
+        padding: 8px;
+        font-size: 36px;
+        color: #ffffff;
+        transition: 0.3s;
+      }
+      li:hover{
+        cursor: pointer;
+        color: #2997ec;
+      }
+      .closeBtn {
+        position: absolute;
+        right: 25px;
+        font-size: 20px;
+        margin-left: 50px;
+        top: 20px;
+        color: #818181;
+        cursor: pointer;
+        border-radius: 50%;
+        border: none;
+        background-color: tomato;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button class="closeBtn" onclick="closeNav()">X</button>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Menu</li>
+      </ul>
+    </nav>
+
+    <button onclick="showMenu()">Show Menu</button>
+
+    <script>
+      console.clear();
+      function showMenu() {
+        document.querySelector("nav").style.width = "100%";
+      }
+      function closeNav() {
+        document.querySelector("nav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
