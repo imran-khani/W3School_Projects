@@ -1,0 +1,39 @@
+.deletes{
+    border: none;
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+
+.modal{
+    border: 1px solid black;
+    width: 100%;
+    max-width: 200px;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    left: 20%;
+    display: none;
+    animation: zoom .4s;
+}
+
+.modalContent h3{
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    color: purple;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.para{
+    margin-top: 200px;
+}
