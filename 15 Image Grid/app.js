@@ -31,6 +31,10 @@ const displayImages = (images) => {
         document.getElementById('column4')
     ];
 
+    columns.forEach((col)=>{
+       col.innerHTML = ''
+    })
+
     let columnIndex = 0;
     images.forEach((img) => {
         const photo = document.createElement('img');
