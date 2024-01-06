@@ -1,0 +1,29 @@
+.container{
+    width: 50%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    background-color: blue;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.container:hover .overlay{
+   left: 0;
+}
