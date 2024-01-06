@@ -47,8 +47,6 @@ const displayImages = (images) => {
             columnIndex = 0;
         }
 
-        // const tags = document.createElement('span')
-        // span.innerHTML = img.tags
-        // columns[columnIndex].appendChild(tags)
+        
     });
 }
