@@ -67,13 +67,3 @@ button{
     display: block;
 }
 
-.image-tag {
-    position: absolute;
-    bottom: 5px; /* Adjust positioning of the tag */
-    left: 5px; /* Adjust positioning of the tag */
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for better readability */
-    padding: 3px 6px;
-    border-radius: 3px;
-    font-size: 12px;
-    font-weight: bold;
-}
