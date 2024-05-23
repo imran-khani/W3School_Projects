@@ -1,15 +1,13 @@
 console.clear()
 
-let input = document.querySelector('input')
+let inputVal = document.querySelector('input')
+let list = document.querySelectorAll('li')
 
 
-const searchFilter = (e) => {
-    let li = document.querySelectorAll('li')
-
-    li.forEach((item) => {
-        let text = item.getElementsByTagName('a')[0].textContent || item.getElementsByTagName('a')[0].innerText;
-        item.style.display = text.toLowerCase().includes(e.target.value) ? '' : 'none';
+inputVal.addEventListener('input',(e)=>{
+    
+    Array.from(list).forEach((item)=>{
+        let links = item.getElementsByTagName('a')[0]
+        item.style.display = (links.innerText.toLowerCase()).includes(e.target.value) ? 'block'  : ''
     })
-}
-
-input.addEventListener('keyup', searchFilter)
+})
