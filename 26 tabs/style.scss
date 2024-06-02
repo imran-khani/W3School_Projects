@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+.container {
+  max-width: 300px;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  button {
+    width: 100%;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: tomato;
+    }
+  }
+}
+
+.tabs {
+  padding: 10px;
+  p {
+    color: tomato;
+  }
+}
+
+.active {
+  background-color: tomato !important;
+}
