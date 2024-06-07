@@ -3,15 +3,22 @@
 console.clear();
 
 let sortBtn = document.querySelector("#sort-btn");
-
-// sort the list items in ul
+let sortedAssending = true;
 sortBtn.addEventListener("click", () => {
   let ul = document.querySelector("ul");
-  let list = document.querySelectorAll("li");
-  list = Array.from(list).sort((a, b) => {
-    return a.textContent
-      .toLowerCase()
-      .localeCompare(b.textContent.toLowerCase());
+  let li = Array.from(ul.children);
+  let sorted = li.sort((a, b) => {
+    let aText = a.textContent.toLowerCase();
+    let bText = b.textContent.toLowerCase();
+    // assending or Descending order
+    if (sortedAssending) {
+      return aText.localeCompare(bText);
+    } else {
+      return bText.localeCompare(aText);
+    }
   });
-  list.forEach((item) => ul.appendChild(item));
+  sorted.forEach((item) => {
+    ul.appendChild(item);
+  });
+  sortedAssending = !sortedAssending;
 });
